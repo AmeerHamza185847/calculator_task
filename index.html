@@ -21,28 +21,28 @@
             <button onclick="valueReciever('7')">7</button>
             <button onclick="valueReciever('8')">8</button>
             <button onclick="valueReciever('9')">9</button>
-            <button class="operator" onclick="calculatio()">+</button>
+            <button class="operator" onclick="valueReciever('+')">+</button>
         </div>
 
         <div class="row2">
             <button onclick="valueReciever('4')">4</button>
             <button onclick="valueReciever('5')">5</button>
             <button onclick="valueReciever('6')">6</button>
-            <button class="operator">-</button>
+            <button class="operator" onclick="valueReciever('-')">-</button>
         </div>
 
         <div class="row3">
             <button onclick="valueReciever('1')">1</button>
             <button onclick="valueReciever('2')">2</button>
             <button onclick="valueReciever('3')">3</button>
-            <button class="operator">*</button>
+            <button class="operator" onclick="valueReciever('*')">*</button>
         </div>
 
         <div class="row3">
-            <button class="clearBtn">C</button>
+            <button class="clearBtn" onclick="clearFun()">C</button>
             <button onclick="valueReciever('0')">0</button>
-            <button>=</button>
-            <button class="operator">/</button>
+            <button onclick="calculation()">=</button>
+            <button class="operator"  onclick="valueReciever('/')">/</button>
         </div>
 
     </div>
