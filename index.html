@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>Calculator</title>
 </head>
+
 <body>
-    <h1>Calculator</h1>
-    
+
+
+    <div class="mainContainer">
+
+        <div>
+            <input class="answer" id="display" type="text" disabled>
+        </div>
+
+        <div class="row1">
+            <button onclick="valueReciever('7')">7</button>
+            <button onclick="valueReciever('8')">8</button>
+            <button onclick="valueReciever('9')">9</button>
+            <button class="operator" onclick="calculatio()">+</button>
+        </div>
+
+        <div class="row2">
+            <button onclick="valueReciever('4')">4</button>
+            <button onclick="valueReciever('5')">5</button>
+            <button onclick="valueReciever('6')">6</button>
+            <button class="operator">-</button>
+        </div>
+
+        <div class="row3">
+            <button onclick="valueReciever('1')">1</button>
+            <button onclick="valueReciever('2')">2</button>
+            <button onclick="valueReciever('3')">3</button>
+            <button class="operator">*</button>
+        </div>
+
+        <div class="row3">
+            <button class="clearBtn">C</button>
+            <button onclick="valueReciever('0')">0</button>
+            <button>=</button>
+            <button class="operator">/</button>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
 </body>
+
 </html>

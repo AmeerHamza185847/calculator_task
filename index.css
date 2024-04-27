@@ -1,0 +1,49 @@
+.mainContainer{
+    /* background-color: black; */
+    width: 265px;
+    margin: auto;
+    background-color: gray;
+    padding: 0.5em 0.8em;
+}
+
+.answer{
+    width: 255px;
+    height: 6vh;
+    margin-bottom: 1em;
+    background-color: white;
+}
+.row1 {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.row2 {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.row3 {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+button{
+    padding: 0.4em 0.6em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 60px;
+    height: 7vh;
+    cursor: pointer;
+}
+
+.operator{
+    background-color: black;
+    color: white;
+}
+
+.clearBtn{
+    background-color: red;
+}
