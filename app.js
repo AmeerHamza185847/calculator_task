@@ -1,15 +1,27 @@
-let valueReciever = (val)=>{
-document.querySelector("#display").value += val;
+let string = "";
+
+
+let getValueByClick = (e) => {
+    try {
+        if (e.target.innerHTML == "=") {
+            string = eval(string);
+            document.getElementById("display").value = string;
+        }
+        else if (e.target.innerHTML == "C") {
+            document.getElementById('display').value = "";
+        }
+        else {
+            string = string + e.target.innerText;
+            document.getElementById('display').value = string;
+        }
+    }
+    catch (error) {
+        document.getElementById('display').value = error;
+    }
+
 }
 
-
-let calculation = ()=>{
-    let result = eval(document.getElementById('display').value);
-    document.getElementById("display").value=result;
-
-}
-
-
-let clearFun = ()=>{
-    document.getElementById("display").value = "";
-}
+let myBtns = document.querySelectorAll(".myBtn");
+Array.from(myBtns).forEach((btn) => {
+    btn.addEventListener('click', getValueByClick);
+})
